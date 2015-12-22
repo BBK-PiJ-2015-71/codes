@@ -22,7 +22,8 @@ public class MatrixChecker
 			for(int i=0;i<mat.length;i++)
 			{
 				for(int j=0;j<i;j++)
-				{	if(mat[i][j]!=mat[j][i])
+				{	
+					if(mat[i][j]!=mat[j][i])
 					{	count+=1;
 					}
 				}
@@ -38,5 +39,26 @@ public class MatrixChecker
 		else
 		{System.out.println("Matrix not symmetrical");
 		}
+
+	}
+
+
+	public void prettyPrint(int[][] matrix_int)
+	{
+		System.out.println("Matrix is:");	
+		for(int m=0;m<matrix_int.length;m++)
+		{	
+			
+			for(int n=0;n<matrix_int[0].length;n++)
+			{	System.out.print(matrix_int[m][n]);
+				if(n!=matrix_int[0].length-1)
+				{System.out.print("\t");
+				}
+			}
+			if(m!=matrix_int.length-1)
+			{ System.out.print("\n");
+			}
+		}
+		System.out.print("\n");	
 	}
 }
