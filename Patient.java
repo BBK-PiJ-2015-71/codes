@@ -4,6 +4,9 @@ public class Patient
 	private int age;
 	private String illness;
 	private Patient nextPatient;
+	private static int patientcount=1;
+	private int count=0;
+	
 	
 	public Patient(String name, int age, String illness) 
 	{
@@ -19,6 +22,7 @@ public class Patient
 		{
 			// this means this is the last patient in the list
 			this.nextPatient = newPatient;
+			patientcount++;
 		} 
 		else 
 		{
@@ -39,7 +43,9 @@ public class Patient
 			// We found it! It is the next one!
 			// Now link this patient to the one after the next
 			this.nextPatient = nextPatient.nextPatient;
+			patientcount--;
 			return true;
+
 		} 
 		else 
 		{
@@ -57,5 +63,21 @@ public class Patient
 		System.out.println("-------------");
 	}
 
+	public static void patientcount()
+	{	System.out.println("Patient count: "+patientcount);
+	}
+
+	public void patientcount2(Patient patient)
+	{	count++;
+		if (patient.nextPatient != null) 
+		{	
+			patientcount2(patient.nextPatient);
+		}
+		else
+		{
+			System.out.println("Count of patients(recursive) : "+count);
+		}
+		count=0;
+	}
 
 }
