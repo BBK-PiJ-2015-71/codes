@@ -22,7 +22,7 @@ public class ListUtilities
 	public static void main(String[] args)
 	{
 		ListUtilities lu = new ListUtilities();
-		int[] x = {1,3,5,7,9};
+		int[] x = {1,3,5,7,9, 10, 11, 12, 13,14,13, 15, 17, 19};
 		lu.list(x);
 	}
 
