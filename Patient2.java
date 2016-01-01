@@ -49,7 +49,7 @@ public class Patient2
 			// Now link this patient to the one after the next
 			this.nextPatient = nextPatient.nextPatient;
 			nextPatient.nextPatient.previousPatient=this;
-			patientcount--;
+			//patientcount--;
 			return true;
 
 		} 
