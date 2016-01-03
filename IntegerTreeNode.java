@@ -1,3 +1,5 @@
+import java.lang.*;
+
 public class IntegerTreeNode 
 {
 	int value;
@@ -5,6 +7,8 @@ public class IntegerTreeNode
 	IntegerTreeNode right;
 	private static int max;
 	private static int min;
+	private static int depthleft;
+	private static int depthright;
 
 	public IntegerTreeNode(int a)
 	{
@@ -13,6 +17,8 @@ public class IntegerTreeNode
 		this.right=null;
 		max=0;
 		min=0;
+		depthleft=0;
+		depthright=0;
 	}
 	
 
@@ -128,5 +134,24 @@ public class IntegerTreeNode
 
 	}
 
+	
+	public int depth()
+	{ this.depthcalc();
+	  return Math.max(depthright, depthleft);
+	}
+
+	private void depthcalc()
+	{
+
+		if(right!=null)
+		{ 	right.depthcalc();
+			depthright++;
+		}	 
+
+		if(left!=null)
+		{	left.depthcalc();
+			depthleft++;
+		}
+	}
 
 }

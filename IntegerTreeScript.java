@@ -10,6 +10,7 @@ public class IntegerTreeScript
 		tree1.add(9);
 		tree1.add(20);
 		tree1.add(-1);
+		tree1.add(-3);
 		tree1.add(7);
 		tree1.add(2);
 
@@ -21,6 +22,7 @@ public class IntegerTreeScript
 		System.out.println("Min: " +tree1.getMin());
 		//Min does work if no value less than 0
 		tree1.toString1();
+		System.out.println("Depth: "+tree1.depth());
 		
 	}
 
