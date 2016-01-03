@@ -110,5 +110,23 @@ public class IntegerTreeNode
 		}
 	}
 
+	public void toString1()
+	{
+		System.out.print("["+this.value+"]");
+		
+		if(left!=null)
+		{	System.out.println("");
+			left.toString1();
+			
+		}
+
+		if(right!=null)
+		{ 	System.out.print("\t");
+			right.toString1();
+		}	 
+
+
+	}
+
 
 }

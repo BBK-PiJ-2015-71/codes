@@ -20,6 +20,7 @@ public class IntegerTreeScript
 		System.out.println("Max: "+tree1.getMax());
 		System.out.println("Min: " +tree1.getMin());
 		//Min does work if no value less than 0
+		tree1.toString1();
 		
 	}
 
