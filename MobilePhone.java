@@ -1,5 +1,12 @@
 public class MobilePhone extends OldPhone
 {
+
+	public MobilePhone(String brand) 
+	{
+		super(brand);
+		//this.brand = brand;
+	}
+
 	public void ringAlarm(String alarm)
 	{
 	}
