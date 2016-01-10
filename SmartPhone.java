@@ -24,5 +24,11 @@ public class SmartPhone extends MobilePhone
 		{ super.call(number);
 		}
 	}
+	
+	public void playGame(String game)
+	{
+		System.out.println("Playing game "+game);
+	}
+
 
 }

@@ -11,9 +11,9 @@ public class MobilePhone extends OldPhone
 	{
 	}
 	
-	public void playGame(String game)
+	private void playGame(String game)
 	{
-	
+		System.out.println("Playing game "+game);
 	}
 	
 	public void printLastNumbers()
