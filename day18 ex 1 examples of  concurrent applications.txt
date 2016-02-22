@@ -1,0 +1,5 @@
+- web browser - each tab is a thread?
+- shared excel file with multiple users editing the file
+- shared word document/google document with multiple users editing 
+
+- Playing a computer game with others over a network
